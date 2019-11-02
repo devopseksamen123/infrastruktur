@@ -24,7 +24,7 @@ resource "opsgenie_user" "foo" {
 }
 
 
-resource "opsgenie_team" "test team" {
+resource "opsgenie_team" "testing" {
   name        = "Testing"
   description = "This team is here to test things"
 
