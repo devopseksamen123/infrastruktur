@@ -10,7 +10,7 @@ resource "heroku_addon" "db_ci" {
     plan = "heroku-postgresql:hobby-dev"
 }
 
-resource "heroku_app" "stage" {
+resource "heroku_app" "staging" {
     name   = "${var.app_prefix}-app-stage"
     region = "eu"
 }
@@ -21,7 +21,7 @@ resource "heroku_addon" "db_stage" {
     plan = "heroku-postgresql:hobby-dev"
 }
 
-resource "heroku_app" "prod" {
+resource "heroku_app" "production" {
     name   = "${var.app_prefix}-app-prod"
     region = "eu"
 }
