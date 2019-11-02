@@ -23,7 +23,6 @@ resource "opsgenie_user" "foo" {
   timezone  = "Europe/Oslo"
 }
 
-
 resource "opsgenie_team" "testing" {
   name        = "Testing"
   description = "This team is here to test things"
